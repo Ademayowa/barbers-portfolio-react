@@ -3,6 +3,7 @@ import Scissors from '../../../img/design-header1.png';
 import img1 from '../../../img/img1.png';
 import img2 from '../../../img/img2.png';
 import img3 from '../../../img/img3.png';
+import Dots from '../../../img/two-dots.png';
 
 const Services = () => {
   return (
@@ -43,6 +44,12 @@ const Services = () => {
             <h6 className='text-capitalize text-white text-center mt-3'>
               hair styling
             </h6>
+          </div>
+        </div>
+
+        <div className='row'>
+          <div className='col-sm-12 text-center mt-2'>
+            <img src={Dots} alt='img' className='img-fluid' />
           </div>
         </div>
       </div>

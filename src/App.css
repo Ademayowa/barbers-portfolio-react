@@ -96,11 +96,31 @@
 .banner .img_1 {
   margin-right: 64px;
 }
+
+.banner .shape_1 {
+  position: absolute;
+  left: 1050px;
+  padding-top: 15px;
+}
+
+.banner .shape_2 {
+  position: absolute;
+  left: 730px;
+  padding-top: 15px;
+}
+
+.banner .shape_3 {
+  position: absolute;
+  left: 334px;
+  padding-top: 15px;
+}
+
 /* Banner end */
 
 /* Services start */
 .services {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 13px;
   background: #222831;
 }
 
@@ -247,11 +267,34 @@
 .client_name {
   padding-top: 18px;
 }
+
+.clients .shape_1 {
+  position: absolute;
+  left: 950px;
+  padding-top: 100px;
+}
+
+.clients .shape_2 {
+  position: absolute;
+  left: 690px;
+  padding-top: 100px;
+}
+
+.clients .shape_3 {
+  position: absolute;
+  left: 350px;
+  padding-top: 100px;
+}
+
+.two-dots {
+  margin-top: 145px;
+}
 /* Clients end */
 
 /* Hire start */
 .hire {
   padding: 80px 0;
+  margin-top: -165px;
   background: #222831;
 }
 
@@ -401,10 +444,8 @@
 
 /* Footer end */
 
-/* @media (max-width: 768px) {
-  .achieve {
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: right;
+@media (max-width: 1024px) {
+  .banner .test {
+    display: none !important;
   }
-} */
+}

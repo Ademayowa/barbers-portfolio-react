@@ -7,7 +7,7 @@ const HireMe = () => {
       <div className='container'>
         <div className='row'>
           <div className='col-sm-12 text-center'>
-            <img src={Scissors} alt='img' className='img-fluid' />
+            <img src={Scissors} alt='img' className='img-fluid img_1' />
           </div>
         </div>
 

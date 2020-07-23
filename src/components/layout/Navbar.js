@@ -19,7 +19,7 @@ const Navbar = () => {
           aria-label='Toggle navigation'
         >
           <span />
-          <span className='navbar-toggler-icon fas fa-bars fa-2x' />
+          <span className='navbar-toggler-icon fas fa-bars text-white' />
         </button>
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ml-auto'>
