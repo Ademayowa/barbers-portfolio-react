@@ -1,6 +1,5 @@
 import React from 'react';
 import Arrow from '../../../img/drop-arrow.png';
-import Calendar from '../../../img/calendar.png';
 import Time from '../../../img/time.png';
 import Img1 from '../../../img/symbol.png';
 import { Link } from 'react-router-dom';

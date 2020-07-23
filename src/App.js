@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/layout/Navbar';
-import Hero from './components/layout/home/Hero';
 import Home from './components/layout/home/Home';
 import Services from './components/layout/home/Services';
 import Achievements from './components/layout/home/Achievements';
