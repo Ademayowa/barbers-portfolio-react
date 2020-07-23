@@ -1,0 +1,410 @@
+:root {
+  --white-color: #fff;
+  --primary-color: #f2a365;
+  --border-radius: 0;
+  --black-color: #000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* Navbar start */
+.navbar {
+  background: linear-gradient(
+    90deg,
+    rgba(1, 1, 1, 0.81) 27.46%,
+    rgba(1, 1, 1, 0.47) 50%
+  );
+  z-index: 2;
+}
+
+.navbar-nav .active {
+  color: var(--primary-color) !important;
+}
+
+.navbar .nav-item .nav-link {
+  color: var(--white-color);
+  font-family: Lato !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.navbar-nav > li {
+  /* do mobile version */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Navbar end */
+
+/* Hero start */
+.defaultHero {
+  background: linear-gradient(
+      90deg,
+      rgba(1, 1, 1, 0.81) 27.46%,
+      rgba(1, 1, 1, 0.47) 50%
+    ),
+    url('./img/hero.png');
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  padding-bottom: 40px;
+  padding-top: 800px;
+  /* Change margin-top on mobile */
+  margin-top: -100px;
+  z-index: 3;
+}
+/* Hero end */
+
+/* Banner start */
+.banner h1 {
+  margin-top: -412px;
+  font-family: Lato !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f2a365;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+
+.banner h2 {
+  font-family: Merriweather !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  color: #e5e5e5;
+  text-transform: capitalize;
+  padding-left: 15px;
+}
+.banner .btn-dark {
+  margin-top: 77px;
+  border: 2px solid var(--primary-color);
+  font-family: Merriweather !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1;
+  height: 50px !important;
+  background: transparent !important;
+  color: var(--primary-color);
+}
+
+.banner .img_1 {
+  margin-right: 64px;
+}
+/* Banner end */
+
+/* Services start */
+.services {
+  padding: 80px 0;
+  background: #222831;
+}
+
+.services h2,
+.achieve h2 {
+  padding-top: 38px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  text-transform: capitalize;
+  line-height: 40px;
+  color: var(--primary-color);
+}
+
+.services p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.services h6 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+.services .no-gutters {
+  padding-top: 25px;
+}
+/* Services end */
+
+/* Archivements start */
+.achieve {
+  background: linear-gradient(
+      to left bottom,
+      rgba(26, 33, 40, 0.1),
+      rgba(4, 12, 32, 0.95)
+    ),
+    url('./img/archievements-banner.svg') center/cover;
+  background-repeat: no-repeat !important;
+  padding-bottom: 80px;
+}
+
+/* .achieve h2 {
+  padding-top: 38px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  text-transform: capitalize;
+  line-height: 40px;
+  color: var(--primary-color);
+} */
+
+.achieve p {
+  font-family: Lato !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120.5%;
+  text-align: center;
+  color: var(--white-color);
+  padding: 0 80px;
+}
+
+.achieve h5 {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 2;
+  color: var(--primary-color);
+}
+
+.achieve h6 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: var(--white-color);
+  margin-top: -15px;
+}
+/* Archivements end */
+
+/* Clients start */
+.clients {
+  padding-top: 80px;
+  padding-bottom: 205px;
+  background: #222831;
+}
+
+.clients h2 {
+  padding-top: 38px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  text-transform: capitalize;
+  line-height: 40px;
+  color: var(--primary-color);
+}
+
+.clients p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.clients .img_1 {
+  padding-top: 80px;
+}
+
+.clients .img_2 {
+  position: absolute;
+  top: 40px;
+  left: 110px;
+}
+
+.clients .img_3 {
+  position: absolute;
+  top: 158px;
+  left: 460px;
+}
+
+.clients .margin_top {
+  margin-top: -260px;
+}
+
+.margin_top p {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.client_name {
+  padding-top: 18px;
+}
+/* Clients end */
+
+/* Hire start */
+.hire {
+  padding: 80px 0;
+  background: #222831;
+}
+
+.hire {
+  padding-top: 38px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  text-transform: capitalize;
+  line-height: 40px;
+  color: var(--primary-color);
+}
+
+.hire p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+/* Hire end */
+
+/* BookForm start */
+.book-form {
+  background: url('./img/i-am-available-bg.png');
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  /* padding-bottom: 200px; */
+}
+
+.opacity {
+  background-color: rgba(43, 48, 55, 0.65);
+  /* padding-bottom: 800px; */
+}
+
+.book-form .img_1 {
+  background: url('./img/clipper.png') no-repeat;
+  background-size: var(--primary-color);
+  padding-bottom: 446px;
+  margin-top: 65px !important;
+}
+
+.forms {
+  padding-top: 120px;
+}
+
+.book-form .form-control-lg {
+  background: #e5e5e5 !important;
+  border: 2px solid #c4c4c4 !important;
+  box-sizing: border-box;
+  height: 66px;
+  border-radius: 0;
+}
+
+.form-group input {
+  font-family: Lato !important;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.book-form .margin_top {
+  margin-top: -15px;
+}
+
+.book-form .margin_top2 {
+  margin-top: -40px;
+}
+
+.arrow {
+  position: relative;
+  top: -46px;
+  /* padding-right: 29px; */
+  left: -25px;
+  /* left: 80px; */
+}
+
+.book-form .time {
+  position: relative;
+  top: -46px;
+  left: 14px;
+}
+
+.book-form .symbol {
+  position: relative;
+  top: -46px;
+  right: 280px;
+}
+
+.book-form .btn-outline-dark {
+  border: 2px solid var(--primary-color) !important;
+  font-family: Merriweather;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 13px !important;
+}
+/* BookForm end */
+.bg-footer {
+  padding-top: 80px;
+  padding-bottom: 10px;
+  background: #222831;
+}
+
+.contact p,
+.address p {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.bg-footer .img_1,
+.bg-footer .contact,
+.bg-footer .address {
+  padding-top: 35px;
+}
+
+.icon_1,
+.icon_2,
+.icon_3 {
+  background-color: #c4c4c4;
+  margin-top: 35px !important;
+}
+
+.copyright {
+  border-top: 2px solid #c4c4c4;
+  margin-top: 25px;
+}
+
+.copyright p {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 15px;
+}
+
+.scroller {
+  margin-top: -60px;
+}
+
+/* Footer start */
+
+/* Footer end */
+
+/* @media (max-width: 768px) {
+  .achieve {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+} */
