@@ -5,7 +5,7 @@
   --black-color: #000;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
@@ -33,7 +33,6 @@
 }
 
 .navbar-nav > li {
-  /* do mobile version */
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -48,6 +47,7 @@
     ),
     url('./img/hero.png');
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat !important;
   padding-bottom: 40px;
   padding-top: 800px;
@@ -158,26 +158,12 @@
 
 /* Archivements start */
 .achieve {
-  background: linear-gradient(
-      to left bottom,
-      rgba(26, 33, 40, 0.1),
-      rgba(4, 12, 32, 0.95)
-    ),
-    url('./img/archievements-banner.svg') center/cover;
+  background: url('./img/archievements-banner.svg') center/cover;
   background-repeat: no-repeat !important;
+  background-size: cover;
+  background-color: #333840;
   padding-bottom: 80px;
 }
-
-/* .achieve h2 {
-  padding-top: 38px;
-  font-family: Merriweather;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  text-transform: capitalize;
-  line-height: 40px;
-  color: var(--primary-color);
-} */
 
 .achieve p {
   font-family: Lato !important;
@@ -291,14 +277,17 @@
 }
 /* Clients end */
 
-/* Hire start */
+/* Book-form start */
+.book-form {
+  margin-top: -50px;
+  text-align: center;
+}
+/* Book-form end */
+
 .hire {
   padding: 80px 0;
   margin-top: -165px;
   background: #222831;
-}
-
-.hire {
   padding-top: 38px;
   font-family: Merriweather;
   font-style: normal;
@@ -316,6 +305,10 @@
   font-size: 16px;
   line-height: 19px;
 }
+
+.hire .img_1 {
+  margin-top: -80px;
+}
 /* Hire end */
 
 /* BookForm start */
@@ -323,12 +316,7 @@
   background: url('./img/i-am-available-bg.png');
   background-repeat: no-repeat !important;
   background-size: cover;
-  /* padding-bottom: 200px; */
-}
-
-.opacity {
-  background-color: rgba(43, 48, 55, 0.65);
-  /* padding-bottom: 800px; */
+  background-color: #333840;
 }
 
 .book-form .img_1 {
@@ -365,12 +353,14 @@
   margin-top: -40px;
 }
 
+.book-form .margin_top3 {
+  margin-top: -15px;
+}
+
 .arrow {
   position: relative;
   top: -46px;
-  /* padding-right: 29px; */
   left: -25px;
-  /* left: 80px; */
 }
 
 .book-form .time {
@@ -392,10 +382,12 @@
   font-size: 18px;
   line-height: 23px;
   text-align: center;
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   margin-top: 13px !important;
 }
 /* BookForm end */
+
+/* Footer start */
 .bg-footer {
   padding-top: 80px;
   padding-bottom: 10px;
@@ -439,13 +431,227 @@
 .scroller {
   margin-top: -60px;
 }
-
-/* Footer start */
-
 /* Footer end */
+
+@media (max-width: 375px) {
+  .services {
+    margin-top: -305px !important;
+  }
+}
+
+/* Navbar */
+@media (max-width: 768px) {
+  .navbar-nav > li {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Hero & banner start */
+  .defaultHero {
+    background: linear-gradient(
+        90deg,
+        rgba(1, 1, 1, 0.81) 27.46%,
+        rgba(1, 1, 1, 0.47) 50%
+      ),
+      url('./img/hero.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    margin-top: -340px;
+    z-index: 3;
+  }
+
+  .banner h1 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: -420px !important;
+  }
+
+  .banner h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .banner .btn-dark {
+    margin-top: 36px;
+    height: 25px !important;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 3px;
+  }
+
+  .banner .img_1 {
+    margin-top: -25px;
+  }
+  /* Hero & banner end */
+
+  /* Services start */
+  .services {
+    margin-top: -260px;
+    text-align: center !important;
+  }
+  /* Services end */
+
+  /* clients start */
+  .clients {
+    margin-top: -70px;
+  }
+  .clients h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: -15px;
+  }
+
+  .clients p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .clients .img_2 {
+    position: relative;
+    left: 0px !important;
+    margin-left: 30px !important;
+    padding-top: 290px !important;
+    width: 80% !important;
+    margin-top: -100px;
+  }
+
+  .clients .align {
+    position: relative;
+    left: 0px !important;
+  }
+
+  .clients .quote {
+    margin-left: 70px;
+  }
+
+  .client_name {
+    margin-left: 160px !important;
+    padding-top: 50px;
+  }
+  /* clients end */
+
+  /* Footer start */
+
+  .bg-footer .address {
+    display: flex;
+    order: -2;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .bg-footer .contact {
+    display: flex;
+    order: -1;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: -20px;
+  }
+
+  .bg-footer .photo {
+    display: flex;
+    order: -3;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+  }
+
+  /* Footer end */
+}
+
+@media (max-width: 768px) {
+  .book-form .forms {
+    position: relative;
+    right: 50px;
+    margin-top: -80px;
+  }
+  .book-form .margin_top3 {
+    margin-top: -15px !important;
+  }
+
+  .book-form .mg_bottom {
+    margin-bottom: -15px !important;
+  }
+
+  .test {
+    margin-left: 100px;
+  }
+
+  .clients .mg_top {
+    position: relative;
+    top: -80px !important;
+  }
+  .clients .img_1 {
+    padding-top: 500px;
+  }
+
+  .clients .img_2 {
+    position: relative;
+    top: -720px;
+    left: 180px;
+  }
+
+  .clients .align {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    position: relative;
+    top: -450px;
+    right: 170px;
+  }
+
+  .client_name {
+    text-align: center;
+    right: 200px;
+    margin-top: -480px;
+  }
+
+  .quote {
+    position: relative;
+    right: 80px;
+    top: -450px;
+  }
+
+  .two-dots {
+    margin-top: -180px;
+  }
+
+  .hire {
+    margin-top: -350px;
+  }
+}
 
 @media (max-width: 1024px) {
   .banner .test {
     display: none !important;
+  }
+}
+
+@media (max-width: 1125px) {
+  .clients .shape_1,
+  .clients .shape_2,
+  .clients .shape_3 {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1255px) {
+  .clients .img_3 {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .book-form .margin_top3 {
+    margin-top: -40px;
   }
 }

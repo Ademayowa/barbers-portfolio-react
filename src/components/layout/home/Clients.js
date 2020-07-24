@@ -1,5 +1,5 @@
 import React from 'react';
-import Design from '../../../img/design-header1.png';
+import Design from '../../../img/design-header2.png';
 import Rectangle from '../../../img/clients-rectangle.png';
 import Clients1 from '../../../img/clients.png';
 import Shape from '../../../img/clients-shape.png';
@@ -15,7 +15,7 @@ const Clients = () => {
     <section className='clients'>
       <div className='container'>
         <div className='row'>
-          <div className='col-sm-12 text-center'>
+          <div className='col-sm-12 text-center design'>
             <img src={Design} alt='img' className='img-fluid' />
           </div>
         </div>
@@ -29,9 +29,9 @@ const Clients = () => {
 
         <div className='row'>
           <div className='col-md-12'>
-            <img src={Rectangle} alt='img' className='img-fluid img_1' />
+            <img src={Rectangle} alt='img' className='img-fluid img_1 mg_top' />
             <div className='col-md-6 img_2'>
-              <img src={Clients1} alt='img' />
+              <img src={Clients1} alt='img' className='img-fluid' />
             </div>
 
             <div className='col-md-6 img_3'>
@@ -39,7 +39,7 @@ const Clients = () => {
             </div>
 
             <div className='col-md-6 ml-auto text-white margin_top'>
-              <p className='px-4'>
+              <p className='px-4 align'>
                 Service is very good, reasonable rate and awsome sense of
                 creativity compared to most top proffesional hair stylists. He
                 has a mild touch but gives nothing but the bestto ehance oce

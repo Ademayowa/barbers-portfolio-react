@@ -12,16 +12,16 @@ const Footer = () => {
     <footer className='bg-footer'>
       <div className='container'>
         <div className='row'>
-          <div className='col-sm-12 text-center'>
+          <div className='col-sm-12 text-center photo'>
             <img src={Img} alt='img' className='img-fluid' />
           </div>
 
-          <div className='col-md-4 text-white text-right contact'>
-            <p>Email: jordiestallon@gmail.com</p>
-            <p>Phone: +1 409 222 443</p>
+          <div className='col-md-4 col-sm-8 text-white text-right contact'>
+            <p className='email order-sm-3'>Email: jordiestallon@gmail.com</p>
+            <p className='phone order-sm-2'>Phone: +1 409 222 443</p>
           </div>
 
-          <div className='col-md-4 text-center'>
+          <div className='col-md-4 text-center d-none d-md-block'>
             <img src={Scissors} alt='img' className='img-fluid img_1' />
           </div>
 

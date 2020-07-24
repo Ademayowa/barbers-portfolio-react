@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const BookForm = () => {
   return (
     <section className='book-form'>
-      <div className='container-fluid opacity'>
+      <div className='container-fluid'>
         <div className='row'>
           <div className='col-lg-4 d-none d-lg-block img_1 clipper'></div>
 
@@ -17,7 +17,7 @@ const BookForm = () => {
                 <div className='form-group col-md-5 pr-lg-2 mt-2'>
                   <input
                     type='text'
-                    className='form-control form-control-lg'
+                    className='form-control form-control-lg mg_bottom'
                     placeholder='Name'
                   />
                 </div>
@@ -53,14 +53,13 @@ const BookForm = () => {
                   <input
                     type='date'
                     className='form-control form-control-lg margin_top2'
-                    placeholder='Service'
                   />
                 </div>
 
                 <div className='form-group col-md-5 pr-lg-2 mt-2'>
                   <input
                     type='text'
-                    className='form-control form-control-lg margin_top2'
+                    className='form-control form-control-lg margin_top3'
                   />
                   <div className='drop-down text-right'>
                     <img src={Time} alt='img' className='img-fluid time ' />
