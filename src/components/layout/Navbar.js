@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../img/logo.svg';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-lg navbar-info'>
-      <div className='container-fluid'>
+      <motion.div
+        className='container-fluid'
+        initial={{ y: -250 }}
+        animate={{ y: -10 }}
+      >
         <Link className='navbar-brand' to='/'>
           <img src={Logo} alt='logo' className='img-fluid' />
         </Link>
@@ -62,7 +67,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </nav>
   );
 };

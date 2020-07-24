@@ -3,6 +3,7 @@ import Img from '../../../img/design-header2.png';
 import Img1 from '../../../img/img4.png';
 import Img2 from '../../../img/img5.png';
 import Img3 from '../../../img/img6.svg';
+import { motion } from 'framer-motion';
 
 const Achievements = () => {
   return (
@@ -13,7 +14,12 @@ const Achievements = () => {
             <img src={Img} alt='img' className='img-fluid' />
           </div>
 
-          <div className='col-sm-12'>
+          <motion.div
+            className='col-sm-12'
+            initial={{ y: -250 }}
+            animate={{ y: -10 }}
+            transition={{ delay: 0.5, duration: 1.6 }}
+          >
             <h2 className='text-center'>archievements</h2>
             <p>
               Jordie Stallon is a classical male grooming and traditional
@@ -22,7 +28,7 @@ const Achievements = () => {
               facials, and body treatments.A classic Barber Shop offering
               grooming services and products in the true sense.
             </p>
-          </div>
+          </motion.div>
 
           <div className='col-md-4 text-center'>
             <img src={Img1} alt='img' className='img-fluid ' />

@@ -154,11 +154,15 @@
 .services .no-gutters {
   padding-top: 25px;
 }
+
+.no-gutters:hover {
+  cursor: pointer;
+}
 /* Services end */
 
 /* Archivements start */
 .achieve {
-  background: url('./img/archievements-banner.svg') center/cover;
+  background: url('./img/archievements-banner.svg') center/cover fixed;
   background-repeat: no-repeat !important;
   background-size: cover;
   background-color: #333840;
@@ -313,9 +317,7 @@
 
 /* BookForm start */
 .book-form {
-  background: url('./img/i-am-available-bg.png');
-  background-repeat: no-repeat !important;
-  background-size: cover;
+  background: url('./img/i-am-available-bg.png') center/cover no-repeat fixed;
   background-color: #333840;
 }
 
@@ -651,6 +653,12 @@
 }
 
 @media (max-width: 1400px) {
+  .book-form .margin_top3 {
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 2560px) {
   .book-form .margin_top3 {
     margin-top: -40px;
   }

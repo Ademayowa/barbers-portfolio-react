@@ -3,6 +3,7 @@ import Name from '../../../img/name.png';
 import Img1 from '../../../img/reactangle1.png';
 import Img2 from '../../../img/reactangle2.png';
 import Img3 from '../../../img/reactangle3.png';
+import { motion } from 'framer-motion';
 
 const Banner = ({ title, subtitle }) => {
   return (
@@ -10,9 +11,38 @@ const Banner = ({ title, subtitle }) => {
       <div className='container-fluid'>
         <div className='row'>
           <div className='col-sm-12'>
-            <h1>{title}</h1>
-            <h2>{subtitle}</h2>
-            <button className='btn btn-dark btn-lg ml-3'>Hire Me</button>
+            <motion.h1
+              initial={{ x: '-100vw' }}
+              animate={{ x: 0 }}
+              transition={{ delay: 0.5, duration: 1.5 }}
+            >
+              {title}
+            </motion.h1>
+            <motion.h2
+              initial={{ x: '-100vw' }}
+              animate={{ x: 0 }}
+              transition={{ delay: 0.5, duration: 1.6 }}
+            >
+              {subtitle}
+            </motion.h2>
+            <motion.button
+              className='btn btn-dark btn-lg ml-3'
+              initial={{ x: '-100vw' }}
+              animate={{ x: 0 }}
+              whileHover={{
+                scale: 1.1,
+                color: '#222831',
+              }}
+              transition={{
+                delay: 0.7,
+                duration: 1.6,
+                type: 'spring',
+                stiffness: 300,
+              }}
+            >
+              Hire Me
+            </motion.button>
+
             <div className='text-right mt-2'>
               <img src={Name} alt='img' className='img-fluid img_1' />
             </div>
